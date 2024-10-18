@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    display: none;
+}
+
+/* Track styles */
+
+
+/* Handle styles */
+::-webkit-scrollbar-thumb {
+    background: #a4a5a550;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #87878750;
+}
+
+/* index.css or your CSS file */
+.pdf-container object {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Hide the navbar, horizontal scrollbar, and vertical scrollbar */
+.pdf-container object[type="application/pdf"]::-webkit-pdf-toolbar,
+.pdf-container object[type="application/pdf"]::-webkit-scrollbar,
+.pdf-container object[type="application/pdf"]::-webkit-scrollbar-track-piece,
+.pdf-container object[type="application/pdf"]::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+
+/* border border-red-500  flex-1 overflow-hidden */
